@@ -276,7 +276,7 @@ namespace Interfaces
 		//https://gyazo.com/29fb21c0e0abb38de5d9641771750c6f
 		//https://gyazo.com/08322dbe3547be437462d4dafef619e3
 		//https://gyazo.com/d4b482bebda0f6d2648058416e674085
-		_I::cenginevgui = (CEngineVGui*)(int(__stdcall ***)(char))((*(uintptr_t**)_I::renderview)[23] + 1);
+		_I::cenginevgui = (CEngineVGui*)(int(__stdcall ***)(BYTE))((*(uintptr_t**)_I::renderview)[23] + 1);
 
 		// https://gyazo.com/b820eeb2498fb4cba6b848893d2448f0
 		// https://gyazo.com/d10ebf84afd112151861498c5f23536b
