@@ -286,8 +286,8 @@ namespace Interfaces
 		_I::viewrender = **(IViewRender***)((*(uintptr_t**)_I::client)[27] + 0x5);
 
 
-		void(*RandomSeed)(int);
-		*(void**)&RandomSeed = GetProcAddress(GetModuleHandleA("vstdlib.dll"), "RandomSeed");
+		
+		void* RandomSeed = *(void**)GetProcAddress(GetModuleHandleA("vstdlib.dll"), "RandomSeed");
 		if (RandomSeed)
 			_I::Random = **(CUniformRandomStream***)((uintptr_t)RandomSeed + 0x5);
 	}
