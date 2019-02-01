@@ -1,4 +1,4 @@
-# Free The Skids - meme from the gmod development discord
+# Free The Skids
 
 https://youtu.be/BTFoiudXht4  
   
