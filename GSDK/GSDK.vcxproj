@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{448D25C8-FEF0-4233-A9FF-639D56004B39}</ProjectGuid>
+    <RootNamespace>GSDK</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Imgui\imgui.cpp" />
+    <ClCompile Include="Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sourcesdk\bone_setup.h" />
+    <ClInclude Include="GSDK\hacks\Aimbot.h" />
+    <ClInclude Include="GSDK\hackvars.h" />
+    <ClInclude Include="gsdk\Menu\menu.h" />
+    <ClInclude Include="sourcesdk\gameevents.h" />
+    <ClInclude Include="sourcesdk\gamemovement.h" />
+    <ClInclude Include="sourcesdk\prediction.h" />
+    <ClInclude Include="sourcesdk\tier0\annotations.h" />
+    <ClInclude Include="sourcesdk\Entities\BaseEntity.h" />
+    <ClInclude Include="sourcesdk\tier0\basetypes.h" />
+    <ClInclude Include="sourcesdk\tier1\bitsnshit\bitbuf.h" />
+    <ClInclude Include="sourcesdk\tier1\bitsnshit\bitbuf2.h" />
+    <ClInclude Include="sourcesdk\tier1\bitsnshit\bitvec.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\vgui_controls\button.h" />
+    <ClInclude Include="sourcesdk\Entities\CBaseAnimating.h" />
+    <ClInclude Include="sourcesdk\Entities\CBaseCombatWeapon.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\CEngineVGui.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\vgui_controls\checkbox.h" />
+    <ClInclude Include="sourcesdk\tier1\checksum_md5.h" />
+    <ClInclude Include="sourcesdk\client\CHLClient.h" />
+    <ClInclude Include="GSDK\Hooks\CHLClient\CHLClient__FrameStageNotify.h" />
+    <ClInclude Include="sourcesdk\tier1\chucksum_crc.h" />
+    <ClInclude Include="sourcesdk\inputsystem\CInput.h" />
+    <ClInclude Include="sourcesdk\CIVPhysicsDebugOverlay.h" />
+    <ClInclude Include="sourcesdk\ClientClass.h" />
+    <ClInclude Include="sourcesdk\client\ClientEntityList.h" />
+    <ClInclude Include="sourcesdk\engine\CModelInfo.h" />
+    <ClInclude Include="sourcesdk\color.h" />
+    <ClInclude Include="sourcesdk\tier0\commonmacros.h" />
+    <ClInclude Include="sourcesdk\mathlib\compressed_vector.h" />
+    <ClInclude Include="GSDK\util\console.h" />
+    <ClInclude Include="sourcesdk\convar.h" />
+    <ClInclude Include="GSDK\util\CPredictionSystem.h" />
+    <ClInclude Include="sourcesdk\Entities\c_baseanimatingoverlay.h" />
+    <ClInclude Include="sourcesdk\Entities\c_basecombatcharacter.h" />
+    <ClInclude Include="sourcesdk\Entities\c_baseflex.h" />
+    <ClInclude Include="sourcesdk\Entities\c_basehlplayer.h" />
+    <ClInclude Include="sourcesdk\Entities\C_BasePlayer.h" />
+    <ClInclude Include="sourcesdk\Entities\c_gmod_player.h" />
+    <ClInclude Include="sourcesdk\Entities\c_hl2mp_player.h" />
+    <ClInclude Include="sourcesdk\datamap.h" />
+    <ClInclude Include="GSDK\definitions.h" />
+    <ClInclude Include="GSDK\hacks\draw.h" />
+    <ClInclude Include="sourcesdk\Engine.h" />
+    <ClInclude Include="GSDK\hacks\ESP.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\Frame.h" />
+    <ClInclude Include="GSDK\Game Events\hitmarker.h" />
+    <ClInclude Include="sourcesdk\globalvars_base.h" />
+    <ClInclude Include="GSDK\hacks\hacks.h" />
+    <ClInclude Include="GSDK\hacks\util.h" />
+    <ClInclude Include="sourcesdk\multiplayer\hl2mp_playeranimstate.h" />
+    <ClInclude Include="sourcesdk\Entities\IClientEntity\IClientEntity.h" />
+    <ClInclude Include="sourcesdk\client\IClientMode.h" />
+    <ClInclude Include="GSDK\Hooks\IClientMode\IClientMode__CreateMove.h" />
+    <ClInclude Include="GSDK\Hooks\IClinetMode\IClientMode__OverrideView.h" />
+    <ClInclude Include="sourcesdk\Entities\IClientEntity\IClientUnknown.h" />
+    <ClInclude Include="GSDK\Hooks\IDirect3DDevice9\IDirect3DDevice9__EndScene.h" />
+    <ClInclude Include="GSDK\Hooks\IDirect3DDevice9\IDirect3DDevice9__Reset.h" />
+    <ClInclude Include="sourcesdk\engine\IEngineTrace.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\IEngineVGui.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\IEngineVGuiInternal.h" />
+    <ClInclude Include="sourcesdk\Entities\IClientEntity\IHandleEntity.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\IInput.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\IInputInternal.h" />
+    <ClInclude Include="sourcesdk\inputsystem\IInputSystem.h" />
+    <ClInclude Include="sourcesdk\materialsystem\IMaterial.h" />
+    <ClInclude Include="sourcesdk\materialsystem\IMaterialSystem.h" />
+    <ClInclude Include="sourcesdk\materialsystem\IMatRenderContext.h" />
+    <ClInclude Include="Imgui\imconfig.h" />
+    <ClInclude Include="Imgui\imgui.h" />
+    <ClInclude Include="Imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="Imgui\imgui_internal.h" />
+    <ClInclude Include="Imgui\stb_rect_pack.h" />
+    <ClInclude Include="Imgui\stb_textedit.h" />
+    <ClInclude Include="Imgui\stb_truetype.h" />
+    <ClInclude Include="include.h" />
+    <ClInclude Include="sourcesdk\INetChannelInfo.h" />
+    <ClInclude Include="GSDK\Interfaces.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\IPanel.h" />
+    <ClInclude Include="GSDK\Hooks\IPanel\IPanel__PaintTraverse.h" />
+    <ClInclude Include="sourcesdk\engine\IRender.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\IScheme.h" />
+    <ClInclude Include="sourcesdk\shaderapi\ishaderapi.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\ISystem.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\IVGui.h" />
+    <ClInclude Include="sourcesdk\client\IViewRender.h" />
+    <ClInclude Include="GSDK\Hooks\IViewRender\IViewRender__RenderView.h" />
+    <ClInclude Include="sourcesdk\engine\IVModelRender.h" />
+    <ClInclude Include="GSDK\Hooks\IVModelRender\IVModelRender__DrawModelExecute.h" />
+    <ClInclude Include="GSDK\Hooks\IVRenderView\IVRenderView__SceneEnd.h" />
+    <ClInclude Include="sourcesdk\tier1\KeyValues.h" />
+    <ClInclude Include="LUA\LuaBase.h" />
+    <ClInclude Include="LUA\LuaInterface.h" />
+    <ClInclude Include="LUA\ILuaShared.h" />
+    <ClInclude Include="LUA\LuaTypes.h" />
+    <ClInclude Include="LUA\LuaUserData.h" />
+    <ClInclude Include="sourcesdk\materialsystem\MaterialSystemStuff.h" />
+    <ClInclude Include="sourcesdk\mathlib\mathlib.h" />
+    <ClInclude Include="sourcesdk\mathlib\math_pfns.h" />
+    <ClInclude Include="sourcesdk\tier0\memalloc.h" />
+    <ClInclude Include="sourcesdk\multiplayer\multiplayer_animstate.h" />
+    <ClInclude Include="GSDK\util\NetVarManager.h" />
+    <ClInclude Include="GSDK\util\offests.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\vgui_controls\Panel.h" />
+    <ClInclude Include="GSDK\util\patternscanning.h" />
+    <ClInclude Include="sourcesdk\vstdlib\random.h" />
+    <ClInclude Include="sourcesdk\recv.h" />
+    <ClInclude Include="sourcesdk\engine\RenderView.h" />
+    <ClInclude Include="sourcesdk\studio.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\surface.h" />
+    <ClInclude Include="sourcesdk\usercmd.h" />
+    <ClInclude Include="sourcesdk\tier1\utlbuffer.h" />
+    <ClInclude Include="sourcesdk\tier1\utlflags.h" />
+    <ClInclude Include="sourcesdk\tier1\utlliknkedlist.h" />
+    <ClInclude Include="sourcesdk\tier1\utlmemory.h" />
+    <ClInclude Include="sourcesdk\tier1\utlvector.h" />
+    <ClInclude Include="sourcesdk\mathlib\vector.h" />
+    <ClInclude Include="sourcesdk\mathlib\vector2d.h" />
+    <ClInclude Include="sourcesdk\mathlib\vector4d.h" />
+    <ClInclude Include="sourcesdk\view_shared.h" />
+    <ClInclude Include="sourcesdk\mathlib\vmatrix.h" />
+    <ClInclude Include="GSDK\util\vmt.h" />
+    <ClInclude Include="sourcesdk\engine\vgui\VPanel.h" />
+    <ClInclude Include="sourcesdk\mathlib\vplane.h" />
+    <ClInclude Include="GSDK\Hooks\_hooks.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GSDK">
+      <UniqueIdentifier>{fb4bce06-9d5a-43b7-8d3f-4af69b346614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\util">
+      <UniqueIdentifier>{0744f353-7255-4d32-8204-d165c5b16d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LUA">
+      <UniqueIdentifier>{8cf3d813-56d0-4c8c-8635-bde002b0f1ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\hacks">
+      <UniqueIdentifier>{63c868ac-1e36-48f7-84b2-14ab981731e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Hooks">
+      <UniqueIdentifier>{653c8389-2a70-4584-9369-f31509483144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Hooks\IClientMode">
+      <UniqueIdentifier>{b8472ff2-74b9-4638-8c39-bb613ffc8608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Hooks\IDirect3DDevice9">
+      <UniqueIdentifier>{e8b6288c-3ee2-4d7a-917b-121a5696c4ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Hooks\CHLClient">
+      <UniqueIdentifier>{e281215b-dcdb-4c5a-a4d7-718e13cb49ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Hooks\IPanel">
+      <UniqueIdentifier>{d50f3603-4312-47c7-a0e1-6e10fc29250a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Hooks\IViewRender">
+      <UniqueIdentifier>{44ea6aa2-2fd0-41af-86e0-46a0f6dbc696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Hooks\IVRenderView">
+      <UniqueIdentifier>{bd8701f6-4e8a-495a-90e7-596be8f1da81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Game Events">
+      <UniqueIdentifier>{06cd1914-4e65-4502-912f-724c54b50188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Hooks\IVModelRender">
+      <UniqueIdentifier>{2fe10b9e-9468-4313-9626-fda16796535d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\imgui">
+      <UniqueIdentifier>{6706a0a4-a14a-4b57-a38d-c68a8f3a143f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\imgui">
+      <UniqueIdentifier>{f547f5f0-2f4c-47d7-951f-72d9e479ea47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk">
+      <UniqueIdentifier>{eadfb0b1-c18a-4630-a812-30cd25c10698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\mathlib">
+      <UniqueIdentifier>{5f766f39-4329-4759-8a68-dcf95e96dcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\tier0">
+      <UniqueIdentifier>{b541c7b7-331a-4617-9dfa-2c07b4076001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\tier1">
+      <UniqueIdentifier>{d59a2981-501e-47b8-89a1-7b02e0c02b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\tier1\bitsnshit">
+      <UniqueIdentifier>{a0bac14b-7126-434e-9e1c-94082904b6a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\Entities">
+      <UniqueIdentifier>{c737c23b-a776-467b-93d1-3ac5bf1c0f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\Entities\IClientEntity">
+      <UniqueIdentifier>{2a9f59a0-c7ec-4bd1-a7d0-4553cb836ec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\multiplayer">
+      <UniqueIdentifier>{20a7adcd-65f4-4f25-ac4d-230e0f29fe72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\vstdlib">
+      <UniqueIdentifier>{52f689a1-ce90-48ec-9487-567b6ab3accd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\materialsystem">
+      <UniqueIdentifier>{4743e541-7895-430e-b357-c949a43f433c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\engine">
+      <UniqueIdentifier>{39acb83d-6872-456f-91f6-9b194ec5eb3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\engine\vgui">
+      <UniqueIdentifier>{b1714c99-2248-4bff-8177-e823b44456b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\client">
+      <UniqueIdentifier>{3404fd53-d866-47a4-8244-1d2158b89280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\shaderapi">
+      <UniqueIdentifier>{31ab2c37-0e04-4fe0-b2d5-244f98a81b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\inputsystem">
+      <UniqueIdentifier>{a57e10fd-200f-42a9-b15e-20f9ae8e85c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sourcesdk\engine\vgui\vgui_controls">
+      <UniqueIdentifier>{635c0bc7-a070-45e6-910b-9216516a8469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GSDK\Menu">
+      <UniqueIdentifier>{54fa890a-b543-4e75-ac05-b992e6ada6e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_draw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_impl_dx9.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_demo.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Imgui\imconfig.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui_impl_dx9.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui_internal.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\stb_rect_pack.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\stb_textedit.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\stb_truetype.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\view_shared.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\usercmd.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\studio.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\INetChannelInfo.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\globalvars_base.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Engine.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\datamap.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\convar.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\color.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\CIVPhysicsDebugOverlay.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\vstdlib\random.h">
+      <Filter>Header Files\sourcesdk\vstdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\utlvector.h">
+      <Filter>Header Files\sourcesdk\tier1</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\utlmemory.h">
+      <Filter>Header Files\sourcesdk\tier1</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\utlliknkedlist.h">
+      <Filter>Header Files\sourcesdk\tier1</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\utlflags.h">
+      <Filter>Header Files\sourcesdk\tier1</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\utlbuffer.h">
+      <Filter>Header Files\sourcesdk\tier1</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\KeyValues.h">
+      <Filter>Header Files\sourcesdk\tier1</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\chucksum_crc.h">
+      <Filter>Header Files\sourcesdk\tier1</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\checksum_md5.h">
+      <Filter>Header Files\sourcesdk\tier1</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\bitsnshit\bitvec.h">
+      <Filter>Header Files\sourcesdk\tier1\bitsnshit</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\bitsnshit\bitbuf2.h">
+      <Filter>Header Files\sourcesdk\tier1\bitsnshit</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier1\bitsnshit\bitbuf.h">
+      <Filter>Header Files\sourcesdk\tier1\bitsnshit</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier0\memalloc.h">
+      <Filter>Header Files\sourcesdk\tier0</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier0\commonmacros.h">
+      <Filter>Header Files\sourcesdk\tier0</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier0\basetypes.h">
+      <Filter>Header Files\sourcesdk\tier0</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\tier0\annotations.h">
+      <Filter>Header Files\sourcesdk\tier0</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\shaderapi\ishaderapi.h">
+      <Filter>Header Files\sourcesdk\shaderapi</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\multiplayer\multiplayer_animstate.h">
+      <Filter>Header Files\sourcesdk\multiplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\multiplayer\hl2mp_playeranimstate.h">
+      <Filter>Header Files\sourcesdk\multiplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\mathlib\vplane.h">
+      <Filter>Header Files\sourcesdk\mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\mathlib\vmatrix.h">
+      <Filter>Header Files\sourcesdk\mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\mathlib\vector4d.h">
+      <Filter>Header Files\sourcesdk\mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\mathlib\vector2d.h">
+      <Filter>Header Files\sourcesdk\mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\mathlib\vector.h">
+      <Filter>Header Files\sourcesdk\mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\mathlib\mathlib.h">
+      <Filter>Header Files\sourcesdk\mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\mathlib\math_pfns.h">
+      <Filter>Header Files\sourcesdk\mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\mathlib\compressed_vector.h">
+      <Filter>Header Files\sourcesdk\mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\materialsystem\MaterialSystemStuff.h">
+      <Filter>Header Files\sourcesdk\materialsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\materialsystem\IMatRenderContext.h">
+      <Filter>Header Files\sourcesdk\materialsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\materialsystem\IMaterialSystem.h">
+      <Filter>Header Files\sourcesdk\materialsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\materialsystem\IMaterial.h">
+      <Filter>Header Files\sourcesdk\materialsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\inputsystem\IInputSystem.h">
+      <Filter>Header Files\sourcesdk\inputsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\inputsystem\CInput.h">
+      <Filter>Header Files\sourcesdk\inputsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\CBaseCombatWeapon.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\CBaseAnimating.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\c_hl2mp_player.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\c_gmod_player.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\C_BasePlayer.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\c_basehlplayer.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\c_baseflex.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\c_basecombatcharacter.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\c_baseanimatingoverlay.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\BaseEntity.h">
+      <Filter>Header Files\sourcesdk\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\IClientEntity\IHandleEntity.h">
+      <Filter>Header Files\sourcesdk\Entities\IClientEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\IClientEntity\IClientUnknown.h">
+      <Filter>Header Files\sourcesdk\Entities\IClientEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\Entities\IClientEntity\IClientEntity.h">
+      <Filter>Header Files\sourcesdk\Entities\IClientEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\RenderView.h">
+      <Filter>Header Files\sourcesdk\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\IVModelRender.h">
+      <Filter>Header Files\sourcesdk\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\IRender.h">
+      <Filter>Header Files\sourcesdk\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\IEngineTrace.h">
+      <Filter>Header Files\sourcesdk\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\CModelInfo.h">
+      <Filter>Header Files\sourcesdk\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\VPanel.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\surface.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\IVGui.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\ISystem.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\IScheme.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\IPanel.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\IInputInternal.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\IInput.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\IEngineVGuiInternal.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\IEngineVGui.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\Frame.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\CEngineVGui.h">
+      <Filter>Header Files\sourcesdk\engine\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\vgui_controls\Panel.h">
+      <Filter>Header Files\sourcesdk\engine\vgui\vgui_controls</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\vgui_controls\checkbox.h">
+      <Filter>Header Files\sourcesdk\engine\vgui\vgui_controls</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\engine\vgui\vgui_controls\button.h">
+      <Filter>Header Files\sourcesdk\engine\vgui\vgui_controls</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\client\IViewRender.h">
+      <Filter>Header Files\sourcesdk\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\client\IClientMode.h">
+      <Filter>Header Files\sourcesdk\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\client\ClientEntityList.h">
+      <Filter>Header Files\sourcesdk\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\client\CHLClient.h">
+      <Filter>Header Files\sourcesdk\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\ClientClass.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\gamemovement.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\prediction.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\gameevents.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\CHLClient\CHLClient__FrameStageNotify.h">
+      <Filter>Header Files\GSDK\Hooks\CHLClient</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\IClientMode\IClientMode__CreateMove.h">
+      <Filter>Header Files\GSDK\Hooks\IClientMode</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\IClinetMode\IClientMode__OverrideView.h">
+      <Filter>Header Files\GSDK\Hooks\IClientMode</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\IDirect3DDevice9\IDirect3DDevice9__EndScene.h">
+      <Filter>Header Files\GSDK\Hooks\IDirect3DDevice9</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\IDirect3DDevice9\IDirect3DDevice9__Reset.h">
+      <Filter>Header Files\GSDK\Hooks\IDirect3DDevice9</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\IPanel\IPanel__PaintTraverse.h">
+      <Filter>Header Files\GSDK\Hooks\IPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\IViewRender\IViewRender__RenderView.h">
+      <Filter>Header Files\GSDK\Hooks\IViewRender</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\IVModelRender\IVModelRender__DrawModelExecute.h">
+      <Filter>Header Files\GSDK\Hooks\IVModelRender</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\IVRenderView\IVRenderView__SceneEnd.h">
+      <Filter>Header Files\GSDK\Hooks\IVRenderView</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Hooks\_hooks.h">
+      <Filter>Header Files\GSDK\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\hacks\util.h">
+      <Filter>Header Files\GSDK\hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\hacks\hacks.h">
+      <Filter>Header Files\GSDK\hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\hacks\ESP.h">
+      <Filter>Header Files\GSDK\hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\hacks\draw.h">
+      <Filter>Header Files\GSDK\hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\hacks\Aimbot.h">
+      <Filter>Header Files\GSDK\hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="gsdk\Menu\menu.h">
+      <Filter>Header Files\GSDK\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\recv.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\util\console.h">
+      <Filter>Header Files\GSDK\util</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\util\CPredictionSystem.h">
+      <Filter>Header Files\GSDK\util</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\util\NetVarManager.h">
+      <Filter>Header Files\GSDK\util</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\util\offests.h">
+      <Filter>Header Files\GSDK\util</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\util\patternscanning.h">
+      <Filter>Header Files\GSDK\util</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\util\vmt.h">
+      <Filter>Header Files\GSDK\util</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Game Events\hitmarker.h">
+      <Filter>Header Files\GSDK\Game Events</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\definitions.h">
+      <Filter>Header Files\GSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\hackvars.h">
+      <Filter>Header Files\GSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDK\Interfaces.h">
+      <Filter>Header Files\GSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\ILuaShared.h">
+      <Filter>Header Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\LuaBase.h">
+      <Filter>Header Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\LuaInterface.h">
+      <Filter>Header Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\LuaTypes.h">
+      <Filter>Header Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\LuaUserData.h">
+      <Filter>Header Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="include.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sourcesdk\bone_setup.h">
+      <Filter>Header Files\sourcesdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
