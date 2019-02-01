@@ -290,15 +290,6 @@ namespace Interfaces
 		*(void**)&RandomSeed = GetProcAddress(GetModuleHandleA("vstdlib.dll"), "RandomSeed");
 		if (RandomSeed)
 			_I::Random = **(CUniformRandomStream***)((uintptr_t)RandomSeed + 0x5);
-
-
-		/*
-		// render.capture function
-		//55 8B EC 83 EC 6C 8B 0D ? ? ? ? 8B 81 ? ? ? ? 89 45 D4 + 575
-		*/
-
-		void* idk = **(void***)(Util::Pattern::FindPattern("client.dll", "55 8B EC 83 EC 6C 8B 0D ? ? ? ? 8B 81 ? ? ? ? 89 45 D4") + 575);
-		print("idk = 0x%X\n", idk);
 	}
 	void _printInterfaceAddresses()
 	{
