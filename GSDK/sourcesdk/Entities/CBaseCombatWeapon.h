@@ -292,8 +292,10 @@ public:
 		this->PushEntity();
 		Lua->GetField(-1, "Base");
 		if (!Lua->IsType(-1, GarrysMod::Lua::Type::STRING))
+		{
+			Lua->Pop(2);
 			return "";
-
+		}
 		const char* out = Lua->GetString(-1);
 		Lua->Pop(2);
 		return out;
