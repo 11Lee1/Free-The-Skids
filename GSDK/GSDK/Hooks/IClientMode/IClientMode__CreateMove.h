@@ -79,5 +79,5 @@ bool __fastcall hookCreateMove(ClientMode* ClientMode, void* edx, float flInputS
 
 	if(Aim)
 		return !HackVars::Aimbot::Silent;
-	return true;
+	return false;
 };
