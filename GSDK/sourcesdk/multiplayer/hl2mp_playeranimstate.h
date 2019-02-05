@@ -53,7 +53,6 @@ class CHL2MPPlayerAnimState : public CMultiPlayerAnimState
 {
 public:
 	// stuff thats padded is useless imo (jk idk i'm just a very lazy man lol)
-	BYTE PAD0[16];
 	bool						m_bForceAimYaw;
 	CUtlVector<GestureSlot_t>	m_aGeustureSlots;
 	BaseEntity*					m_pPlayer;
