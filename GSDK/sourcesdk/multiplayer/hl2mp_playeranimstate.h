@@ -52,7 +52,7 @@ struct DebugPlayerAnimData_t
 class CHL2MPPlayerAnimState : public CMultiPlayerAnimState
 {
 public:
-	// stuff thats padded is useless imo (jk idk i'm just a very lazy man lol)
+	// stuff thats padded is useless imo (jk idk i'm just a very lazy man lol) 
 	bool						m_bForceAimYaw;
 	CUtlVector<GestureSlot_t>	m_aGeustureSlots;
 	BaseEntity*					m_pPlayer;
