@@ -119,10 +119,7 @@ void __fastcall hookDrawModelExecute(IVModelRender* modelrender, void* edx, Draw
 			ModelRender()->ForcedMaterialOverride(nullptr);
 			return orgDrawModelExecute(modelrender, state, pInfo, pCustomBoneToWorld);
 		}
-
-
-
-		if (Ent->IsHands()) {
+		else if (Ent->IsHands()) {
 			IMaterial* WireFrame = MaterialSystem()->FindMaterial("models/wireframe", TEXTURE_GROUP_MODEL);
 			WireFrame->AddRef();
 
@@ -135,17 +132,6 @@ void __fastcall hookDrawModelExecute(IVModelRender* modelrender, void* edx, Draw
 			colormod[0] = 1; colormod[1] = 1; colormod[2] = 1;
 			renderview()->SetColorModulation(colormod);
 			return;
-		}
-		else if (Ent == LocalPlayer) {
-			LocalPlayer->InvalidateBoneCache();
-			LocalPlayer->EyeAngles() = H::Util::Math::FixAngles(HackVars::LastSentInfo::viewangles);
-			LocalPlayer->GetAnimState()->Update(LocalPlayer->EyeAngles().y, LocalPlayer->EyeAngles().x);
-			matrix3x4_t bones[128];
-			LocalPlayer->m_flPlaybackRate() = 0.0f;
-			if (!LocalPlayer->SetupBones(bones, 128, BONE_USED_BY_ANYTHING, 0.0f)) {
-				return orgDrawModelExecute(modelrender, state, pInfo, pCustomBoneToWorld);
-			}
-			return orgDrawModelExecute(modelrender, state, pInfo, bones);
 		}
 	}
 	return orgDrawModelExecute(modelrender, state, pInfo, pCustomBoneToWorld);
