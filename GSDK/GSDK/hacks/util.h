@@ -173,7 +173,6 @@ namespace H
 			yaw[0] = Math::AngleNormalizePositive(oldangles.y);
 			yaw[1] = Math::AngleNormalizePositive(cmd->viewangles.y);
 			if (pitch >= 90.0f && pitch <= 270.0f) {
-				yaw[1] -= 180;
 				yaw[1] = Math::AngleNormalizePositive(yaw[1]);
 			}
 
