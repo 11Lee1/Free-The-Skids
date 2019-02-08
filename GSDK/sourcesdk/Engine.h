@@ -119,6 +119,7 @@ public:
 	virtual void*	SaveAllocMemory(size_t num, size_t size) = 0;
 	virtual void	SaveFreeMemory(void *pSaveMem) = 0;
 	virtual INetChannelInfo *GetNetChannelInfo(void) = 0;
+	CNetChannel* GetNetChannel() { return (CNetChannel*)GetNetChannelInfo(); }
 	virtual void		DebugDrawPhysCollide(const CPhysCollide *pCollide, IMaterial *pMaterial, matrix3x4_t& transform, const color32 &color) = 0;
 	virtual void	CheckPoint(const char *pName) = 0;
 	virtual void	DrawPortals() = 0;
