@@ -188,5 +188,23 @@ namespace H
 			cmd->forwardmove = cos(DEG2RAD(deltaView)) * fwdmov + cos(DEG2RAD(deltaView + 90.f)) * sdmov;
 			cmd->sidemove = sin(DEG2RAD(deltaView)) * fwdmov + sin(DEG2RAD(deltaView + 90.f)) * sdmov;
 		}
+		float LerpTime()
+		{
+			static ConVar* cl_updaterate = CVar()->FindVar("cl_updaterate");
+			static ConVar* cl_interp_ratio = CVar()->FindVar("cl_interp_ratio");
+			static ConVar* cl_interp = CVar()->FindVar("cl_interp");
+			static ConVar* pMin = CVar()->FindVar("sv_client_min_interp_ratio");
+			static ConVar* pMax = CVar()->FindVar("sv_client_max_interp_ratio");
+			float flLerpAmount = cl_interp->GetFloat();
+			float flLerpRatio = cl_interp_ratio->GetFloat();
+
+			if (flLerpRatio == 0)
+				flLerpRatio = 1.0f;
+
+			if (pMin && pMax && pMin->GetFloat() != -1)
+				flLerpRatio = clamp(flLerpRatio, pMin->GetFloat(), pMax->GetFloat());
+
+			return MAX(flLerpAmount, flLerpRatio / cl_updaterate->GetInt());
+		}
 	};
 };
