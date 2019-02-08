@@ -15,10 +15,9 @@ bool __fastcall hookCreateMove(ClientMode* ClientMode, void* edx, float flInputS
 		orgCreateMove(ClientMode, flInputSampleTime, cmd);
 		return false;
 	}
-	static int ChokedCommands = 0;
 	bool ForcedPacket = false;
 
-	if (ChokedCommands >= 13)
+	if (engine()->GetNetChannel()->m_nChokedPackets >= 14)
 		ForcedPacket = true;
 
 
@@ -72,10 +71,7 @@ bool __fastcall hookCreateMove(ClientMode* ClientMode, void* edx, float flInputS
 	if (sendpacket) {
 		HackVars::LastSentInfo::Position = LocalPlayer->GetRenderOrigin();
 		HackVars::LastSentInfo::viewangles = cmd->viewangles;
-		ChokedCommands = 0;
 	}
-	else
-		ChokedCommands++;
 
 	if(Aim)
 		return !HackVars::Aimbot::Silent;
