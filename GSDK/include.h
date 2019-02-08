@@ -71,6 +71,8 @@
 #include "sourcesdk/materialsystem/IMaterial.h"
 #include "sourcesdk/engine/IRender.h"
 #include "sourcesdk/INetChannelInfo.h"
+#include "sourcesdk/inetchannel.h"
+#include "sourcesdk/engine/net_chan.h"
 #include "sourcesdk/client/ClientEntityList.h"
 #include "sourcesdk/Engine.h"
 #include "sourcesdk/multiplayer/multiplayer_animstate.h"
