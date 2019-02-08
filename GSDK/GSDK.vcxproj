@@ -135,8 +135,10 @@
     <ClInclude Include="GSDK\hacks\Aimbot.h" />
     <ClInclude Include="GSDK\hackvars.h" />
     <ClInclude Include="gsdk\Menu\menu.h" />
+    <ClInclude Include="sourcesdk\engine\net_chan.h" />
     <ClInclude Include="sourcesdk\gameevents.h" />
     <ClInclude Include="sourcesdk\gamemovement.h" />
+    <ClInclude Include="sourcesdk\inetchannel.h" />
     <ClInclude Include="sourcesdk\prediction.h" />
     <ClInclude Include="sourcesdk\tier0\annotations.h" />
     <ClInclude Include="sourcesdk\Entities\BaseEntity.h" />
