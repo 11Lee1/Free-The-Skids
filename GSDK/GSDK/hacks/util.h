@@ -172,10 +172,7 @@ namespace H
 
 			yaw[0] = Math::AngleNormalizePositive(oldangles.y);
 			yaw[1] = Math::AngleNormalizePositive(cmd->viewangles.y);
-			if (pitch >= 90.0f && pitch <= 270.0f) {
-				yaw[1] = Math::AngleNormalizePositive(yaw[1]);
-			}
-
+			
 			if (yaw[1] < yaw[0])
 				deltaView = abs(yaw[1] - yaw[0]);
 			else
