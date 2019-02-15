@@ -39,14 +39,15 @@ void __fastcall hookRenderView(IViewRender* ViewRender, void* edx, CViewSetup& v
 	view.fovViewmodel = HackVars::Visuals::RenderView::ViewModelFOV;
 	HackVars::FOV = view.fov;
 	
-	
-	QAngle eye = H::Util::Math::FixAngles(HackVars::CurCmd->viewangles);
-	LocalPlayer->EyeAngles() = eye; LocalPlayer->LocalEyeAngles() = eye;
-	LocalPlayer->GetAnimState()->m_DebugAnimData.m_flAimPitch = eye.x;
-	LocalPlayer->GetAnimState()->m_DebugAnimData.m_flAimYaw = eye.y;
-	LocalPlayer->GetAnimState()->m_flEyePitch = eye.x;
-	LocalPlayer->GetAnimState()->m_flEyeYaw = eye.y;
-	LocalPlayer->GetAnimState()->Update(eye.y, eye.x);
-	LocalPlayer->GetAnimState()->m_angRender.y = LocalPlayer->GetAnimState()->m_flCurrentFeetYaw;
+	if(HackVars::CurCmd) { 
+		QAngle eye = H::Util::Math::FixAngles(HackVars::CurCmd->viewangles);
+		LocalPlayer->EyeAngles() = eye; LocalPlayer->LocalEyeAngles() = eye;
+		LocalPlayer->GetAnimState()->m_DebugAnimData.m_flAimPitch = eye.x;
+		LocalPlayer->GetAnimState()->m_DebugAnimData.m_flAimYaw = eye.y;
+		LocalPlayer->GetAnimState()->m_flEyePitch = eye.x;
+		LocalPlayer->GetAnimState()->m_flEyeYaw = eye.y;
+		LocalPlayer->GetAnimState()->Update(eye.y, eye.x);
+		LocalPlayer->GetAnimState()->m_angRender.y = LocalPlayer->GetAnimState()->m_flCurrentFeetYaw;
+	}
 	return orgRenderView(ViewRender,view,nClearFlags,whatToDraw);
 }
