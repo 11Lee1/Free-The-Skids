@@ -39,7 +39,7 @@ void __fastcall hookRenderView(IViewRender* ViewRender, void* edx, CViewSetup& v
 	view.fovViewmodel = HackVars::Visuals::RenderView::ViewModelFOV;
 	HackVars::FOV = view.fov;
 	
-	if(HackVars::CurCmd) { 
+	if(HackVars::CurCmd) {
 		QAngle eye = H::Util::Math::FixAngles(HackVars::CurCmd->viewangles);
 		LocalPlayer->EyeAngles() = eye; LocalPlayer->LocalEyeAngles() = eye;
 		LocalPlayer->GetAnimState()->m_DebugAnimData.m_flAimPitch = eye.x;
