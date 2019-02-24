@@ -1,8 +1,6 @@
 typedef HRESULT(__stdcall* EndSceneFn)(IDirect3DDevice9*);
 EndSceneFn orgEndScene = nullptr;
 
-using EndSceneFn = long(__stdcall *)(IDirect3DDevice9*);
-
 extern IMGUI_API LRESULT ImGui_ImplDX9_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 WNDPROC orgproc = nullptr;
 
