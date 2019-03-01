@@ -51,7 +51,7 @@ bool __fastcall hookCreateMove(ClientMode* ClientMode, void* edx, float flInputS
 			cmd->buttons.SetFlag(IN_ATTACK);
 			H::Util::CorrectMovement(cmd, ViewAngle);
 			Aim = true;
-			cmd->tick_count = TIME_TO_TICKS(Target->m_flSimulationTime() + H::Util::LerpTime()); 
+			cmd->tick_count = TIME_TO_TICKS(Target->m_flSimulationTime()); 
 			// ^ that will not hit anyone fake lagging in hvh fyi.
 		}
 	}
