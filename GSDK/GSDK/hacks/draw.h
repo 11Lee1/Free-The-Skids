@@ -42,6 +42,7 @@ namespace H
 			surface()->DrawSetTextPos(x, y);
 			surface()->DrawPrintText(wc, cSize - 1);
 			surface()->DrawSetTextColor(255,255,255,255);
+			delete[] wc;
 		}
 	};
 };
